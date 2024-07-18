@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<p th:text = "${'Hello,'}"></p>
+<p th:text = "${'You have requested to reset your password.' }"></p>
+<p> Click the link below to change your password:</p>
+<a th:href="@{${link}}"> Change Your Password</a>
+<br>
+<p>Or you can use this temporary password<span style="color:blue;font-weight:bold"> [[${token}]] </span></p>
+<p style="color:Tomato;">NOTE: This email will last 5 minutes from the time the user receives the email,</p>
+<p>Ignore this email if you do remember your password, or you have not made the request.</p>
+</body>
+</html>

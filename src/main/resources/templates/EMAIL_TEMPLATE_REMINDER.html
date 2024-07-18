@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>This email is from IMS system,</p>
+
+<p th:text = "${'You have an offer to take action For Candidate' +' '+ candidateName }"></p>
+<p th:text = "${'position' +' '+ position +' '+ 'before' +' '+ dueDate +' '+', the contract' }"></p>
+<p> is attached with this no-reply-email</p>
+
+<p th:text = "${'Please refer this link to take action' +' '+ 'http://localhost:8080/api/v1/offer/' + id }"></p>
+
+<p th:text = "${'If anything wrong, please reach-out recruiter'+' '+ recruiterOwnerAccount+
+'. We are so sorry for this inconvenience.'}"></p>
+
+<p> Thanks & Regards!</p>
+<p> IMS Team. </p>
+<p th:text = "${'Attachment:' + attachment }"></p>
+
+</pre>
+</body>
+</html>

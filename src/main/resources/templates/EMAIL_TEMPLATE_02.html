@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<span style="font-weight: bold">This email is from IMS system,</span>
+<br>
+<br>
+<br>
+<p th:text = "${'You have an interview schedule TODAY at'  + ' '+' '+ scheduleFrom + ' '+ 'to' + ' '+ scheduleTo }"></p>
+<p th:text = "${'With Candidate' + ' '+candidateName + ' ' +'position' + ' ' +candidatePosition+', the CV is attached with this no-reply-email' }"></p>
+<p th:text="${'If anything wrong, please refer recuiter' + ' ' + recruiter + '@fsoft.com.vn or visit our website'}"></p>
+<p th:text="${''}"></p>
+<span th:text="${'Please join interview room ID:'}" ><a href=th:text="${meetingId}"></a></span>
+<p th:text="${meetingId}"></p>
+<p>Thanks & Regards!</p>
+<p>IMS Team.</p>
+</body>
+</html>
